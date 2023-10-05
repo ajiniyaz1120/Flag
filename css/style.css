@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(138, 206, 200);
+}
+
 .container {
   width: 300px;
   margin: 100px auto;
@@ -15,6 +19,10 @@
   background-color: rgb(0, 140, 255);
   position: relative;
   border-radius: 10px;
+  -webkit-animation-name: flag;
+          animation-name: flag;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 .flag_blue i {
   position: absolute;
@@ -56,6 +64,53 @@
   font-size: 10px;
 }
 
+.flag_blue:hover {
+  box-shadow: 2px 2px 9px 3px rgb(124, 124, 233);
+}
+
+@-webkit-keyframes flag {
+  0% {
+    width: 50px;
+    height: 60px;
+  }
+  100% {
+    width: 300px;
+    height: 60px;
+  }
+}
+
+@keyframes flag {
+  0% {
+    width: 50px;
+    height: 60px;
+  }
+  100% {
+    width: 300px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @-webkit-keyframes flag {
+    0% {
+      width: 50px;
+      height: 100px;
+    }
+    100% {
+      width: 500px;
+      height: 100px;
+    }
+  }
+  @keyframes flag {
+    0% {
+      width: 50px;
+      height: 100px;
+    }
+    100% {
+      width: 500px;
+      height: 100px;
+    }
+  }
+}
 @media only screen and (min-width: 1024px) {
   .flag_blue {
     width: 500px;
@@ -96,35 +151,95 @@
 }
 .flag_line-white {
   content: "";
-  width: 300px;
+  width: 280px;
   height: 2px;
   background-color: white;
   border-radius: 10px;
+  margin: auto;
+  -webkit-animation-name: line;
+          animation-name: line;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
+@-webkit-keyframes line {
+  0% {
+    width: 50px;
+    height: 2px;
+  }
+  100% {
+    width: 280px;
+    height: 2px;
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 50px;
+    height: 2px;
+  }
+  100% {
+    width: 280px;
+    height: 2px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .flag_line-white {
     content: "";
-    width: 500px;
+    width: 480px;
     height: 5px;
     background-color: white;
   }
 }
 .flag_line-red {
   content: " ";
-  width: 292px;
+  width: 280px;
   height: 2px;
   margin: auto;
   border-radius: 10px;
   background-color: red;
+  -webkit-animation-name: line;
+          animation-name: line;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
 }
 
+@keyframes line {
+  0% {
+    width: 50px;
+    height: 2px;
+  }
+  100% {
+    width: 280px;
+    height: 2px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .flag_line-red {
     content: " ";
-    width: 492px;
+    width: 480px;
     height: 5px;
     background-color: red;
+  }
+  @-webkit-keyframes line {
+    0% {
+      width: 50px;
+      height: 5px;
+    }
+    100% {
+      width: 480px;
+      height: 5px;
+    }
+  }
+  @keyframes line {
+    0% {
+      width: 50px;
+      height: 5px;
+    }
+    100% {
+      width: 480px;
+      height: 5px;
+    }
   }
 }
 .flag_yellow {
@@ -132,6 +247,14 @@
   height: 60px;
   background-color: rgb(252, 214, 1);
   border-radius: 10px;
+  -webkit-animation-name: flag;
+          animation-name: flag;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.flag_yellow:hover {
+  box-shadow: 2px 2px 9px 3px rgb(252, 214, 1);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -146,6 +269,14 @@
   height: 60px;
   background-color: rgb(31, 218, 62);
   border-radius: 10px;
+  -webkit-animation-name: flag;
+          animation-name: flag;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+.flag_green:hover {
+  box-shadow: 2px 2px 9px 3px rgb(31, 218, 62);
 }
 
 @media only screen and (min-width: 1024px) {
